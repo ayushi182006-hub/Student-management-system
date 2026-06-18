@@ -1,0 +1,32 @@
+class Student:
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+    def add_marks(self,score):
+        self.marks += score
+    def show(self):
+        print(self.name,self.marks)
+    def get_marks(self):
+        return self.marks
+    def grade(self):
+        if self.marks>=90:
+            print("A")
+        elif self.marks>=80:
+            print("B")
+        elif self.marks>=70:
+            print("C")
+        elif self.marks>=60:
+            print("D")
+        elif self.marks>=50:
+            print("E")
+        else:
+            print("F")
+
+s1 = Student("Ayushi",80)
+s2 = Student("Aditya",60)
+s1.add_marks(5)
+s1.show()
+s1.grade()
+print(s1.get_marks())
+s2.show()
+s2.grade()
